@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Geospasial Cagar Budaya</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+
+    <link href='css/graph.css' rel='stylesheet' type='text/css'/>
+
+</head>
+<body data-spy="scroll">
+
+    <div class="container">
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <a href="dashboard.html">
+                                <li class="mnu">
+                                    <span class="menu-glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> Dashboard
+                                </li>
+                            </a>
+                            <a href="panduan.html">
+                                <li class="mnu">
+                                    <span class="menu-glyphicon glyphicon glyphicon-book" aria-hidden="true"></span> Panduan
+                                </li>
+                            </a>
+                            <a href="daftarcagar.html">
+                                <li class="mnu">
+                                    <span class="menu-glyphicon glyphicon glyphicon-list" aria-hidden="true"></span> Daftar Cagar Budaya
+                                </li>
+                            </a>
+                            
+                        </ul>
+                    </div>
+                    <!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li class="logo"><a href="index.html">Data Geospasial Cagar Budaya</a></li>
+            <li style="margin-right: 10px;">
+                <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Logout
+                </button>
+                
+              </div>
+                
+            </li>
+        
+    </div>
+
+    
+    <!-- Section: intro -->
+    <section style="margin-top:100px;">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="s">
+                        <div class="col-md-8">
+                            <div class="thumbnail" style="text-align:center;">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.331691130693!2d106.79545154970211!3d-6.351085195381477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee92a0461575%3A0xce82fbd638006727!2sJl.+Aselih%2C+Cipedak%2C+Jagakarsa%2C+Kota+Jakarta+Selatan%2C+Daerah+Khusus+Ibukota+Jakarta!5e0!3m2!1sid!2sid!4v1462162555315" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dropdown" style="margin-bottom:10px; float:right;">
+                                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-plus"></span> Tambah Data
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="digitasi.html">Digitasi </a></li>
+                                    <li><a href="index.html">Unggah SHP </a></li>
+                                    <li><a href="index.html">Unggah Raster </a></li>
+                                </ul>
+                            </div>
+                            <div style="padding:10px;"></div>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td width="40%"><b>Tanggal Penetapan </b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Nomor Penetapan </b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Pemilik </b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Pengelola </b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Batas Utara</b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Batas Timur</b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Batas Selatan</b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="40%"><b>Batas Barat</b></td>
+                                    <td>isi disini</td>
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                            <div style="float:right;">
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+                                <button class="btn btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <footer style="position:relative; bottom:0;" class="footer">
+      <div class="container">
+        <p class="text-muted">© Setditjen Kebudayaan - Ditjen Kebudayaan, Kemdikbud. 2016</p>
+      </div>
+    </footer>
+
+    
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/stellar.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
