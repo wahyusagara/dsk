@@ -141,6 +141,8 @@ hr {
 		font-family: 'Lato', Arial, sans-serif;
 		line-height: 60px;
 		z-index:150;
+		border-bottom: solid #e2e2e2;
+
 }
 
 .gn-menu-main {
@@ -910,5 +912,6 @@ footer a:hover {
 	background: #1d7daa;
 	color: #ffffff;
 }
-div.mnu li.selected a { color: #FF0000; } 
-li.selected a { color: #FF0000; }
+li.current {
+    background: #565656;
+}
